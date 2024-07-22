@@ -2,7 +2,7 @@
 
 https://public.tableau.com/views/Book1_17216412705640/Dashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
-This is a demo dashboard built in Tableau Public and published to the link above made as a weekend project to try to learn Tableau. The aim was to build a simple dashboard that showcases a few different graphs/charts, KPIs, and interactive filters and the dashboard is formatted for desktop and phones (not tablets). As a disclaimer, I am not a doctor or a healthcare professional.
+This is a demo dashboard built in Tableau Public and published to the link above made as a weekend project to learn Tableau. The aim was to build a simple dashboard that showcases a few different graphs/charts, KPIs, and interactive filters and the dashboard is formatted for desktop and phones (not tablets). As a disclaimer, I am not a doctor or a healthcare professional.
 
 The KPIs highlighted:
 - 'Total Cases' - total number of COVID cases (note: this is the only part of the dashboard that doesn't seem to work with the filters, something I'll need to fix)
@@ -18,6 +18,10 @@ On the right (in desktop), there are two maps which indicate the COVID rates (ca
 The data was sourced from the CDC from two of their public datasets: 
 1. COVID-19 Case Surveillance Public Use Data - https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data/vbim-akqf/about_data
 2. Weekly United States COVID-19 Cases and Deaths by State - https://data.cdc.gov/Case-Surveillance/Weekly-United-States-COVID-19-Cases-and-Deaths-by-/pwn4-m3yp/about_data
+
+The COVID-19 Case Surveillance Public Use Data dataset was a case-by-case dataset of each reported case of COVID from the start of the pandemic (Jan 2020) to present (even though the dataset's documentation purportedly stopped updates). However, since the second dataset did not resume updates, all dates were filtered after May 2023 to match time spans. The dataset includes (among a few other features) the date of reporting, sex, race/ethnicity, age group, and information if the person was hospitalized, admitted to the ICU, or died. Given its scope, the dataset is massive, 100m rows and over 10gb in size. Through the CDC's query system, I filtered (no rows with 'Missing', 'Unknown', 'NA', 'Other' in the 'sex', 'age_group', 'race_ethnicity_combined' columns) it down and without unnecessary columns, and this dataset was still over 5gb in size and ~35m rows. Cleaning up and shortening some of the string categories in the data, filtering out date ranges beyond 05-2023, then filtering out and rows with missing data in the hospitalization, icu, mortality rate columns got me down to over 15m rows, which is just over the 15m row limit in Tableau Public. So I sampled the dataset down to sub 15m rows (leaving enough space for the second dataset which was a few thousand rows).
+
+The Weekly United States COVID-19 Cases and Deaths by State dataset was much easier to handle and process. This was a weekly update of new COVID cases and deaths in each US state (and province), in addition to a running total of both numbers. Raw, it came to about <10000 rows and <600kb in size. After removing unnecessary columns and aggregating the weekly data into monthly data, it ended up with under 2500 rows.
 
 ## Preprocessing
 
