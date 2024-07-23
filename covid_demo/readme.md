@@ -28,3 +28,7 @@ The Weekly United States COVID-19 Cases and Deaths by State dataset is a weekly 
 The COVID-19 Case Surveillance Public Use Data dataset was initially filtered through the CDC's query system: removing any uncessary columns and any rows in the 'sex'/'age_group'/'race_ethnicity_combined' columns that had any 'Missing'/'Unknown'/'NA'/'Other' data. This brought down the initially massive >100m row and >10gb dataset down to about ~35m rows and >5gb (but still way too big for Tableau Public's cap of 15m rows). Cleaning up and shortening some of the string categories in the data, filtering out date ranges beyond 05-2023, then filtering out and rows with missing data in the hospitalization, icu, mortality rate columns got me down to over 15m rows, which is just over the 15m row limit. So I sampled the dataset down to <15m rows, leaving enough space for the second dataset which was a few thousand rows.
 
 The Weekly United States COVID-19 Cases and Deaths by State dataset was much easier to handle and process. Raw, it came to about <10000 rows and <600kb in size. After removing unnecessary columns and aggregating the weekly data into monthly data, it ended up with under 2500 rows.
+
+### To Do List
+1. Clean up processing notebook
+2. Figure out why "Total Cases" KPI isn't updating with the year/month filters.
