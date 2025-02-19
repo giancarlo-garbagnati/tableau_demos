@@ -29,5 +29,5 @@ The COVID-19 Case Surveillance Public Use Data dataset was initially filtered th
 
 The Weekly United States COVID-19 Cases and Deaths by State dataset was much easier to handle and process. Raw, it came to about <10000 rows and <600kb in size. After removing unnecessary columns and aggregating the weekly data into monthly data, it ended up with under 2500 rows.
 
-### To Do List
+## To Do List
 1. Figure out why "Total Cases" KPI isn't updating with the year/month filters.
