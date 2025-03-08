@@ -9,7 +9,7 @@ The KPIs highlighted:
 - 'Total Deaths' - total confirmed deaths from COVID during the selected time filters
 - 'Hospitalization' - hospitalization percentage rate from COVID symptoms
 - 'ICU Rate' - percentage rate at which patients were admitted to the ICU with COVID symptoms
-- 'Mortality' - mortality percetange from COVID
+- 'Mortality' - mortality percentage from COVID
 
 On the right (in desktop), there are two maps which indicate the COVID rates (case rate and confirmed COVID deaths) across states (and some US provinces). At the bottom left (in desktop), there's a line graph of cases and deaths over time from 01/2020 - 05/2023 (or some period within if you're using the filters). Above these is a bar graph for hospitalization/ICU/mortality rates aggregated by age group followed by a similar bar graph aggregated by race/ethnicity. Then finally we have the filters for year and month.
 
@@ -25,7 +25,7 @@ The Weekly United States COVID-19 Cases and Deaths by State dataset is a weekly 
 
 ## Preprocessing
 
-The COVID-19 Case Surveillance Public Use Data dataset was initially filtered through the CDC's query system: removing any uncessary columns and any rows in the 'sex'/'age_group'/'race_ethnicity_combined' columns that had any 'Missing'/'Unknown'/'NA'/'Other' data. This brought down the initially massive >100m row and >10gb dataset down to about ~35m rows and ~5gb (but still way too large for Tableau Public's cap of 15m rows). Cleaning up and shortening some of the string categories in the data, filtering out date ranges beyond 05-2023, then filtering out and rows with missing data in the hospitalization, icu, mortality rate columns got me down to which leaves me with 1.7m rows.
+The COVID-19 Case Surveillance Public Use Data dataset was initially filtered through the CDC's query system: removing any unnecessary columns and any rows in the 'sex'/'age_group'/'race_ethnicity_combined' columns that had any 'Missing'/'Unknown'/'NA'/'Other' data. This brought down the initially massive >100m row and >10gb dataset down to about ~35m rows and ~5gb (but still way too large for Tableau Public's cap of 15m rows). Cleaning up and shortening some of the string categories in the data, filtering out date ranges beyond 05-2023, then filtering out and rows with missing data in the hospitalization, icu, mortality rate columns got me down to which leaves me with 1.7m rows.
 
 The Weekly United States COVID-19 Cases and Deaths by State dataset was much easier to handle and process. Raw, it came to about <10000 rows and <600kb in size. After removing unnecessary columns and aggregating the weekly data into monthly data, it ended up with under 2500 rows.
 
