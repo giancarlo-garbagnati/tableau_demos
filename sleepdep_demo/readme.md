@@ -45,6 +45,7 @@ From the initial dataset downloaded on Kaggle, a few of the features were added,
 - The other three lifestyle factors (`Caffeine_Intake`, `Physical_Activity_Level`, `Stress_Level`) were all some numerical scale and was made into groups (low, moderate, high).  
 
 There was no missing data in any cell, so it was clean in that regard. Overall, looking at the data, there appears to be almost no correlation between variables.  
+![CorrMatrix](https://raw.githubusercontent.com/giancarlo-garbagnati/tableau_demos/refs/heads/main/sleepdep_demo/correlationmatrix.png)  
 
 
 ## To Do List
