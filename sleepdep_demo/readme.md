@@ -8,7 +8,11 @@ This was a simple (and not quite complete) dashboard build from a Kaggle dataset
 
 ## Dashboard  
 
-The dashboard is only formatted for desktop and as mentioned is in an "unfinished" state.  
+The dashboard is only formatted for desktop and as mentioned is in an "unfinished" state. The KPIs highlight:  
+- `Avg Sleep Hours` - Average hours of sleep a night for the participants of the study.  
+- `Avg Sleep Quality Score` - The average sleep quality score for the participants (measured on a 0-20 scale).  
+- `Avg Daytime Sleepiness` - Average sleepiness rating for the participants (measured on a 0-24 scale).  
+There are interactive filters for the different categories in: `Age Group`, `Gender`, `BMI`, `Stress Level`, `Physical Activity`, and `Caffeine` intake for more granular looks at different demographics. There's an average sleep hours graph, separated by age group and gender, a pie chart of genders, a sleep quality histogram (still on that 0-24 scale), and finally a scatterplot of sleep hours against sleep quality score (trying to see if there are any apparent relationships between sleep and sleep quality as seen from this dataset).  
 
 ## Dataset  
 
@@ -36,10 +40,12 @@ Features:
 ## Preprocessing  
 
 From the initial dataset downloaded on Kaggle, a few of the features were added, converted from other features that had a numerical scale and converted into categorical groups. Namely:  
-- `Age` was 
+- `Age` was converted into 3 age ranges (18-25, 26-35, 36-45)
 - `BMI` was converted into underweight/normal/overweight/obese based on WHO guidelines.  
 - The other three lifestyle factors (`Caffeine_Intake`, `Physical_Activity_Level`, `Stress_Level`) were all some numerical scale and was made into groups (low, moderate, high).  
-  
+
+There was no missing data in any cell, so it was clean in that regard. Overall, looking at the data, there appears to be almost no correlation between variables.  
+
 
 ## To Do List
 - Nothing. If they update the dataset with more records, I might consider revisiting this, but as it stands now, doesn't seem worth the time.
