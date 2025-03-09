@@ -1,4 +1,4 @@
-## COVID Cases and Mortality in the United States from Jan 2020 to May 2023
+# COVID Cases and Mortality in the United States from Jan 2020 to May 2023
 
 https://public.tableau.com/views/Book1_17216412705640/Dashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
