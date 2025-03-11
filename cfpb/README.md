@@ -1,6 +1,6 @@
 # Consumer Financial Protection Bureau (CFPB) Consumer Complaint Dashboard  
 
-Dashboard link
+https://public.tableau.com/views/CFPBcomplaintdata/Overall?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link  
 
 This dashboard displays some information regarding the complaints filed with the CFPB from its beginning in late 2011 to Feb 20, 2025. It covers the kinds of complaints filed, to whom (which companies) they're filed against, and when and where the complaints are filed from.  
   
