@@ -23,19 +23,18 @@ The raw file is 5.03 gb (compressed to 1.05 gb) with 7,848,317 records. After pr
 - `Date received` - Datetime, date (month/day/year) when the complaint was made  
 - `Month received` - Categorical, month when the complaint was made (derived from `Date received`)  
 - `Year received` - Numerical, year when the complaint was made (derived from `Date received`)  
-- `Product` - 
-- `Sub-product` - 
-- `Issue` - 
-- `Sub-issue` - 
-- `Has consumer complaint narrative` - 
-- `Company response` - 
-- `Company` - 
-- `State` - 
-- `ZIP code` - 
-- `Submitted via` - 
-- `Company response to consumer` - 
-- `Timely response?` - 
-
+- `Product` - Categorical, the product type of the complaint (for example, bank account, credit reporting, debt collection, mortgages, etc)  
+- `Sub-product` - Categorical, more specific product category  
+- `Issue` - Categorical, the issue type of the complaint  
+- `Sub-issue` - Categorical, more specific issue category  
+- `Has consumer complaint narrative` - Boolean, if the consumer has a write-up regarding their compliant  
+- `Company response` - Categorical, company response type  
+- `Company` - Categorical, the company's name  
+- `State` - Categorical, the state from which this complaint was filed  
+- `ZIP code` - Numerical, the ZIP code from which this complaint was filed  
+- `Submitted via` - Categorical, from what means (online, phone, mail, etc) this complaint was filed  
+- `Company response to consumer` - Categorical, whether or not the company responded with relief to the consumer  
+- `Timely response?` - Yes/no, if the company responded within a "timely" manner  
 
 ## Preprocessing  
 
