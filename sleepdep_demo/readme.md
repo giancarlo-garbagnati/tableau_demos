@@ -21,10 +21,10 @@ There are interactive filters for the different categories in: `Age Group`, `Gen
 Features:
 - `Participant_ID` - A unique identifier for the people  
 - `Sleep_Hours` - Number of hours the participant slept throughout the night  
-- `Sleep_Quality_Score` - A score from 0-20 of the quality of sleep for the participant. It's unclear to me if this is somehow empirically-derived score or a self-assigned score (this is a reoccuring theme that will bother me with this dataset)  
+- `Sleep_Quality_Score` - A score from 0-20 of the quality of sleep for the participant. It's unclear to me if this is somehow empirically-derived score or a self-assigned score (this is a reoccurring theme that will bother me with this dataset)  
 - `Daytime_Sleepiness` - A score from 0-24 measuring daytime sleepiness for the participant (I'm guessing it has to do with hours feeling sleepiness?)  
 - Cognitive Performance Metrics (I'd take a guess at least these are empirical)  
-  - `Stroop_Task_Reaction_Time` - Cognitive psychological test that measures selection attention, cognitive flexibility, and processsing speed. Measured in seconds (reaction time to correctly identify the color of a word printed in ink) and lower typically is a better result  
+  - `Stroop_Task_Reaction_Time` - Cognitive psychological test that measures selection attention, cognitive flexibility, and processing speed. Measured in seconds (reaction time to correctly identify the color of a word printed in ink) and lower typically is a better result  
   - `N_Back_Accuracy` - Cognitive test measuring working memory and executive function. A percentage accuracy of correct responses, higher is better.  
   - `PVT_Reaction_Time` - A cognitive test measuring sustained attention and vigilance. Measured in seconds (reaction time to react to a visual stimulus) and lower typically is a better result (similarly to Stroop)  
 - `Emotion_Regulation_Score` - A metric used to assess an individual's ability to manage and respond to emotional experiences in a healthy and adaptive way. A score from some kind of questionnaire or some scale (higher scores typically mean better emotional regulation)  

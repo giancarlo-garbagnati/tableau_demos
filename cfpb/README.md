@@ -8,11 +8,34 @@ The [CFPB](https://en.wikipedia.org/wiki/Consumer_Financial_Protection_Bureau) (
 
 ## Dashboard  
 
-*to be added*  
+KPIs highlighted are:  
+- Number of complaints  
+- Percentage of timely responses from companies  
+- Percentage of complaints with a write-up  
+- Top 3 complaints types  
+There are two interactive filters for selecting a time range and a way to specify a single company to focus on. The visualizations include a cloropleth map for complaint density across the US, a treetop for the companies that have complaints against them, stacked bar chart showing complaint volume by product with each bar segmented by issue type, and number of complaints issued each day over time.  
 
 ## Dataset  
 
-*to be added*  
+1) Consumer Financial Protection Bureau (CFPB) - https://www.consumerfinance.gov/data-research/consumer-complaints/#download-the-data  
+
+The raw file is 5.03 gb (compressed to 1.05 gb) with 7,848,317 records. After processing this reduces down to 1.06 gb and 7,638,765 records. The final features of the dataset:  
+- `Date received` - Datetime, date (month/day/year) when the complaint was made  
+- `Month received` - Categorical, month when the complaint was made (derived from `Date received`)  
+- `Year received` - Numerical, year when the complaint was made (derived from `Date received`)  
+- `Product` - 
+- `Sub-product` - 
+- `Issue` - 
+- `Sub-issue` - 
+- `Has consumer complaint narrative` - 
+- `Company response` - 
+- `Company` - 
+- `State` - 
+- `ZIP code` - 
+- `Submitted via` - 
+- `Company response to consumer` - 
+- `Timely response?` - 
+
 
 ## Preprocessing  
 
