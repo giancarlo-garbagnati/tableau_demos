@@ -38,7 +38,13 @@ The raw file is 5.03 gb (compressed to 1.05 gb) with 7,848,317 records. After pr
 
 ## Preprocessing  
 
-*to be added*  
+From the initial set downloaded from CFPB's website, then uncompressed, a few features were added, others removed, and some categories cleaned up and simplified.
+- `Month` and `Year` were derived from `Date received`  
+- `Product`, `Company public response`, and `Company response to consumer` categories were consolidated and simplified (`Company public response` renamed to `Company response`).  
+- `Has consumer complaint narrative` was created from `Consumer complaint narrative`, changing the long test write-ups to if there was a narrative write-up or not.  
+- Any `State` not in the 50 US states + DC had their records removed (to simplify creating a cloropeth map) (apologies to those in the territories or armed services abroad, etc).  
+- Any "unknown" `ZIP code` (listed as "XXXXX") had their record removed.  
+- Removed: `Consumer complaint narrative`, `Tags`, `Consumer consent provided?`, `Date sent to company`, `Consumer disputed?`, `Complaint ID`  
 
 ## To Do List  
 1. Write a script to update the data (pull from CFPB website and process). As far as I know, I'd have to manually update the Tableau dashboard itself. I could theoretically get Tableau to automatically update if I use a Google Sheet instead of just a .csv. However, since the processed dataset (up to 2/20) is 1.7gb, I don't think I'll use up my precious Google space with this. The other "blocker" could be that the CFPB just stops existing (or stops updating and/or taking any complaints) rendering any update script kind of moot.

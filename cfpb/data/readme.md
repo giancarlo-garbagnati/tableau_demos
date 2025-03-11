@@ -1,0 +1,1 @@
+This is just a sample of the dataset to include in this repo. It includes all records from 2017 and 2018. The full dataset can be downloaded from the [CFPB's website](https://www.consumerfinance.gov/data-research/consumer-complaints/#download-the-data).  
